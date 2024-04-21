@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pnMain" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csit228_f1_v2.HelloController">
+   <children>
+      <GridPane fx:id="pnLogin" alignment="CENTER" hgap="22.0" vgap="10.0">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" />
+            <ColumnConstraints />
+            <ColumnConstraints halignment="CENTER" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints valignment="CENTER" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children>
+            <Label text="Username" GridPane.rowIndex="1" />
+            <Label text="Password" GridPane.rowIndex="3" />
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onLoginClick" text="Login" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: RED;" text="WELCOME TO CITTTTT" textAlignment="CENTER" GridPane.columnSpan="3" />
+            <PasswordField fx:id="pfPass" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="tfUser" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#onRegisterClick" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
